@@ -1,18 +1,18 @@
 terraform {
   backend "remote" {
-    organization = "hashicorp-learn"    
+    organization = "chrisbeck"
     workspaces {
       name = "learn-terraform-pipelines-k8s"
     }
   }
-required_providers {
+  required_providers {
     google = {
       source  = "hashicorp/google"
       version = "~> 3.55"
     }
-}
+  }
 
-required_version = "~> 0.14"
+  required_version = "~> 0.14"
 }
 
 
